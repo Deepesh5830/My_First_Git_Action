@@ -1,0 +1,13 @@
+name: second workflow
+on: push
+jobs:
+  my-job1:
+     runs-on:
+       steps:
+         - name: Hy my second workflow
+           run: echo " this is my second workflow"
+  my-job2:
+     runs-on:
+       steps:
+         - name: "crate my second job"
+           run: echo "Crate a new job"
