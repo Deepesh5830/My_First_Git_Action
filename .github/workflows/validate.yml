@@ -15,7 +15,7 @@ jobs:
         run: ls -la
 
       - name: Validate HTML file
-        run: test -f index.html
+        run: test -f public/index.html
 
       - name: Validate JS code
         run: node --check script.js
