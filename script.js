@@ -1,2 +1,2 @@
-console.log("wellecome to script");
+console.log("wellecome to script").;
 
