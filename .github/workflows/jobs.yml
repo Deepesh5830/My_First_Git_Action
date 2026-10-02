@@ -3,7 +3,7 @@ on:
   workflow_run:
     workflows: [First Workflow]
     types:
-      - completed
+       - completed
 jobs:
   validate-html:
        runs-on: ubuntu-latest
