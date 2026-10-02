@@ -1,7 +1,7 @@
 name: validate jobs
 on:
   workflow_run:
-    workflows: [First Workflow]
+    workflows: [first-workflow]
     types:
        - completed
 jobs:
