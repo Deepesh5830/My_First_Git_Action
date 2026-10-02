@@ -1,4 +1,4 @@
-name: validate files
+name: validate jobs
 on:
   workflow_run:
     workflows: [First Workflow]
