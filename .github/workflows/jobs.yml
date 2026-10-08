@@ -5,7 +5,9 @@ on:
     types:
        - completed
 jobs:
+  
   validate-html:
+       if: ${{ github.event.workflow_run.conclusion == 'success' }}
        runs-on: ubuntu-latest
        steps:
         - name: get-repo-code
@@ -15,6 +17,7 @@ jobs:
           run: test -f public/index.html
         
   validate-js:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: get-repo-code
